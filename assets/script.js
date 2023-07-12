@@ -70,7 +70,6 @@ function saveOnClick() {
       var key = $(this).parent().attr('id');
       var inputValue = $(this).siblings('.description').val();
       localStorage.setItem(key, inputValue);
-      $('.description').innerHTML=localStorage.getItem(key);
    })
 }
 saveOnClick();
@@ -86,10 +85,7 @@ saveOnClick();
 //    storedItem.innerHTML = item;
 // 
 
-var textarea = $('.time-block').children[2]
-console.log(textarea);
-
-function persist(){
-   textarea.innerHTML = localStorage.getItem(key);
-}
-persist;
+var key=[9,10,11,12,13,14,15,16,17]
+var persist = this.localStorage.getItem(key);
+var target = $('description');
+target.innerHTML = persist;

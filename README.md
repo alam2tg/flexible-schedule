@@ -1,4 +1,6 @@
 # Work Day Scheduler Starter Code
+https://github.com/alam2tg/flexible-schedule
+https://alam2tg.github.io/flexible-schedule/
 
 ## Description
 My motivation to make this project was to create a useful tool that used APIs. While learning how to code, it became apparent that the 'learning' aspect took many forms. Individual study, group study, and learning from experts. I realized that I needed all three of these elements to learn as effectively as possible. With this, scheduler, I could properly allocate time to all these fields on my journey to learn how to code. 
