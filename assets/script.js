@@ -69,14 +69,27 @@ function saveOnClick() {
    $(".saveBtn").on("click", function() {
       var key = $(this).parent().attr('id');
       var inputValue = $(this).siblings('.description').val();
-      localStorage.setItem(, inputValue)
-
-      alert('Input value saved');
+      localStorage.setItem(key, inputValue);
+      $('.description').innerHTML=localStorage.getItem(key);
    })
 }
 saveOnClick();
 
-
+// This.Parent - we grab the id # just like we did for the previous function blockColor. 
 
 //Fifth 
 // When we refresh the page, then the saved events persist.
+// function persist() {
+//    var item = localStorage.getItem(key);
+//    var storedItem = $('.description')
+//    storedItem.textContent = item;
+//    storedItem.innerHTML = item;
+// 
+
+var textarea = $('.time-block').children[2]
+console.log(textarea);
+
+function persist(){
+   textarea.innerHTML = localStorage.getItem(key);
+}
+persist;
