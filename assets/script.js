@@ -48,6 +48,7 @@ var now = dayjs().format('H'); // = 18
 // var timeBlock = $('.row time-block')
 //assign each time block a value to compare to now
 
+// I selected all the time blocks using a class. I then used this.
 function blockColor() {
    $('.time-block').each(function(){
       var hour = parseInt(this.id);
@@ -55,13 +56,27 @@ function blockColor() {
       $(this).toggleClass('present', hour === now);
       $(this).toggleClass('future', hour > now);
    })
-   }
+}
 blockColor()
 
 // Fourth
 // Click the time-block, be able to input information
 // When I click the save button - text is saved in local storage 
 // Event Listener on Save Button to save the info to Local Storage
+
+
+function saveOnClick() {
+   $(".saveBtn").on("click", function() {
+      var key = $(this).parent().attr('id');
+      var inputValue = $(this).siblings('.description').val();
+      localStorage.setItem(, inputValue)
+
+      alert('Input value saved');
+   })
+}
+saveOnClick();
+
+
 
 //Fifth 
 // When we refresh the page, then the saved events persist.
