@@ -9,15 +9,6 @@ Individual Study - Reading, Solving Coding Problems
 Group Study - Projects, Discussing Code
 Experts - Advice from professionals, Videos, Stack Overflow
 
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
-
 ## Installation
 Creating this Work Day Scheduler required a few steps.
 1. Getting the data. By using day.js as an API for current time, the scheduler is able to keep the current date as well as use the current time "now", as a reference.
