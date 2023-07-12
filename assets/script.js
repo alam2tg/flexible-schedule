@@ -85,7 +85,9 @@ saveOnClick();
 //    storedItem.innerHTML = item;
 // 
 
-var key=[9,10,11,12,13,14,15,16,17]
-var persist = this.localStorage.getItem(key);
-var target = $('description');
-target.innerHTML = persist;
+$('.time-block').each(function() {
+   var key = $(this).attr('id')
+   var value = localStorage.getItem(key);
+   $(this).children('.description').val(value);
+ 
+ });
