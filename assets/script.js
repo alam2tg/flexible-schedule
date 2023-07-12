@@ -42,26 +42,21 @@ $('#currentDay').text(today);
 var now = dayjs().format('H'); // = 18 
    console.log(now);
 
-var past;
-var present;
-var future;
-var timeBlock = $('.row time-block')
-
-var hours = document.querySelectorAll('.time-block');
-var hoursArray = array.from(hours);
-console.log(hoursArray);
-
-var hour9 = $('#hour-9')
-hour9.val('9')
-
-console.log(hour9);
-
-var timeBlock = $('.time-block')
-
+// var past;
+// var present;
+// var future;
+// var timeBlock = $('.row time-block')
 //assign each time block a value to compare to now
 
 function blockColor() {
+   $('.time-block').each(function(){
+      var hour = parseInt(this.id);
+      $(this).toggleClass('past', hour < now);
+      $(this).toggleClass('present', hour === now);
+      $(this).toggleClass('future', hour > now);
+   })
    }
+blockColor()
 
 // Fourth
 // Click the time-block, be able to input information
