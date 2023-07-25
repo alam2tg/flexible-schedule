@@ -1,6 +1,11 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  background-color:aliceblue;
+}
+
+main {
+  font-size: 24px;
 }
 
 textarea {
